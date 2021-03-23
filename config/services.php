@@ -30,4 +30,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
 
+    'sqlite' => [
+        'driver' => 'sqlite',
+        'database' => env('DB_DATABASE', database_path('database.sqlite')),
+        'prefix' => '',
+    ],
+
 ];
